@@ -6,7 +6,30 @@
     <title>Hora de Codar 3</title>
 
     <script>
+        //5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. Considere que o primeiro sempre será menor que o segundo.
 
+        var valor1 = parseInt(prompt("Digite o primeiro número: "));
+        var valor2 = parseInt(prompt("Digite o segundo número: "));
+
+        let valores = [];
+        while(valor1 <= valor2){
+            valor1++;
+            valores.push(valor1);
+            console.log(valores);
+        }
+        
+        var soma = 0;
+        for (let i = 0; i <= valores.length; i++){
+            soma += valores[i];
+        }
+        document.write(soma);
+
+        // const numeros = [2, 5, 7, 9, 10];
+        // let soma = 0;
+        // for (let i = 0; i < numeros.length; i++) {
+        // soma += numeros[i];
+        // }
+        // console.log("A soma dos elementos é:", soma);
     </script>
 </head>
 <body>
