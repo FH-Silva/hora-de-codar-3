@@ -6,7 +6,29 @@
     <title>Hora de Codar 3</title>
 
     <script>
+        //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
 
+        var aprovados = 0; //Variavel para contar o numero de alunos aprovados
+        
+        do{
+        var num1 = parseInt(prompt("Digite a primeira nota: "));
+        var num2 = parseInt(prompt("Digite a primeira nota: "));
+
+        let result = (num1 + num2) / 2;//Calcular a media e atribuir a "result"
+        console.log("Resultado: " + result);
+
+        if(result >= 9.5){//Se aprovado, será somado +1 a variavel "aprovados"
+            console.log("aprovado");
+            aprovados++;
+        }
+        else{
+            console.log("reprovado");
+        }
+        var repetir = confirm("Calcular a média de outro aluno?");
+        }while(repetir == true) //Enquanto o usuario responder "ok", o loop se manterá
+
+        document.write("Quantidade de alunos aprovados: " + aprovados);
+        
     </script>
 </head>
 <body>

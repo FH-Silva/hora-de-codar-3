@@ -6,7 +6,20 @@
     <title>Hora de Codar 3</title>
 
     <script>
+        //4 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
+        
+        var valores = [];
+        var i = 15; //Ponto de partida
+        while(i <= 100){ //Repetir ate que chegue ao 100
+            valores.push(i); //Incluir os valores na array
+            i++
+        }
 
+        let soma = 0;
+        for (let a = 0; a < valores.length; a++) {
+            soma += valores[a]; //Somar os valores da array e incluir em soma
+        }
+        document.write(soma / valores.length); //Dividir pela quantidade de elementos da array valores
     </script>
 </head>
 <body>

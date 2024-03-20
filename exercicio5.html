@@ -11,16 +11,12 @@
         var valor1 = parseInt(prompt("Digite o primeiro número: "));
         var valor2 = parseInt(prompt("Digite o segundo número: "));
 
-        let valores = [];
-        while(valor1 <= valor2){
-            valor1++;
-            valores.push(valor1);
-            console.log(valores);
-        }
-        
+        var valores = [];
         var soma = 0;
-        for (let i = 0; i <= valores.length; i++){
-            soma += valores[i];
+        for (let i = valor1; i <= valor2; i++){
+            valores.push(i);
+            console.log(i);
+            soma += i;
         }
         document.write(soma);
     </script>
